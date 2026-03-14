@@ -1,0 +1,6 @@
+flask
+websockets
+requests
+sympy
+wikipedia
+pyjokes
