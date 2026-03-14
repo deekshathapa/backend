@@ -4,3 +4,4 @@ requests
 sympy
 wikipedia
 pyjokes
+pyttsx3
