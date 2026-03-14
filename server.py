@@ -4,13 +4,7 @@ import datetime
 import webbrowser
 import random
 import os
-import pyttsx3
 
-engine = pyttsx3.init()
-
-def speak(text):
-    engine.say(text)
-    engine.runAndWait()
 
 async def handle_client(websocket):
     async for message in websocket:
@@ -146,8 +140,7 @@ async def handle_client(websocket):
             response = "Opening Spotify for music..."
 
         await websocket.send(response)
-        speak(response)
-
+        
 async def main():
     try:
         async with websockets.serve(handle_client, "localhost", 8765):
